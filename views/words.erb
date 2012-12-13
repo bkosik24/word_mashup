@@ -1,0 +1,6 @@
+<%= erb :'form' %>
+<% @spellings.each do |word| %>
+	<ul>
+		<li style="float:left;padding-right:20px;"><a href="/definition/<%= word %>?original_word=<%= @word %>"><%= word %></a></li>
+	</ul>
+<% end %>

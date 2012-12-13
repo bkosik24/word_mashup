@@ -1,0 +1,11 @@
+<form action="/find_word" method="post">
+	<p>
+ 		<label>Enter Word:</label> <input type="text" name="word" value="<%= @word %>">
+ 		<select name="limit">
+ 			<% @number_options.each do |num| %>
+ 				<option value="<%= num %>"><%= num %></option>
+ 			<% end %>
+ 		</select>
+ 		<input type="submit" value="Submit">
+	</p>
+</form>
