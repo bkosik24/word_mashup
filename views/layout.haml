@@ -12,10 +12,12 @@
 		%div{id: "content", class: "container-fluid"}
 			%div{class: "row-fluid"}
 				%div{class: "span3"}
-					%form{action: "/find_word", method: "get"}
-						%p
-							%label Enter Word:
-							%input{type: "text", name: "word", value: @word}
-							%input{type: "submit", value: "Submit"}
+					%div{class: "sidebar-nav-fixed"}
+						%form{action: "/find_word", method: "get"}
+							%div
+								%label{for: "word"} Enter Word:
+								%input{type: "text", name: "word", value: @word}
+							%div
+								%input{type: "submit", value: "Submit", class: "btn"}
 				%div{class: "span9"}
 					=yield
