@@ -12,7 +12,7 @@ require "will_paginate-bootstrap"
 
 %w(rubygems wordnik).each {|lib| require lib}
 Wordnik.configure do |config|
-	config.api_key = 'dda1b2f2f32181605358a07cb56366a5c7c1b76738d123ebf'
+	config.api_key = "YOUR API KEY HERE"
 end
 
 class Word
