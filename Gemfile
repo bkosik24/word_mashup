@@ -4,5 +4,8 @@ gem 'sinatra'
 gem 'crack'
 gem 'wordnik'
 gem 'shotgun'
-
-# gem "rails"
+gem 'haml'
+gem 'will_paginate'
+gem 'coffee-script'
+gem 'sass'
+gem 'will_paginate-bootstrap'

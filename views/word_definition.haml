@@ -1,0 +1,13 @@
+%div
+	%h3 Definition for the word #{@word}
+	- if @definitions.blank?
+		%p There are no known definitons.
+	- else
+		- count=1
+		- @definitions.each do |word|
+			%div{id: "definition_for_word_#{@word}"}
+				%p
+					%u Definiton #{count}
+				%p Definition comes from #{word["attributionText"]}
+				%p Definition is: #{word["text"]}
+			- count+=1

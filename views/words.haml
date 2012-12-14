@@ -1,0 +1,5 @@
+-@words.each do |word|
+	%ul
+		%li
+			%a{href: "/definition/#{word}"}= word
+=will_paginate(@words, :renderer => BootstrapPagination::Sinatra)
